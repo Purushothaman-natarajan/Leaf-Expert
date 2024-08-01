@@ -13,7 +13,7 @@ A hybrid explainer model designed to differentiate between plant diseases and no
 ## TODOs
 - [x] Adding Image Classifier (Development Interface).
 - [x] Adding Explainer.
-- [ ] Adding VLM.
+- [x] Adding VLM.
 - [ ] Integrating the Flow
 - [ ] Add Demo
 - [ ] Deploy
