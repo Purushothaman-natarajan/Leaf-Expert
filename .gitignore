@@ -1,0 +1,62 @@
+# .gitignore — Leaf-Expert
+
+# ── Python ───────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+*.dylib
+
+# Virtual environments
+venv/
+env/
+.env
+.venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ── ML / Data ────────────────────────────────────────────────────
+models/
+*.pth
+*.pt
+*.h5
+*.keras
+*.onnx
+logs/
+data/
+!data/.gitkeep
+
+# ── Node / Frontend ──────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# ── OS ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Docker ───────────────────────────────────────────────────────
+.docker/
+
+# ── Misc ─────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+explanation/
