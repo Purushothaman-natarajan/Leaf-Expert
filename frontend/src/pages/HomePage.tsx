@@ -4,7 +4,7 @@ import { Leaf, FlaskConical, Cpu, ScanEye, Zap, ChevronRight } from 'lucide-reac
 const features = [
   {
     icon: '🌿',
-    color: 'var(--green-700)',
+    color: 'var(--info)',
     title: 'Transfer Learning',
     desc: 'Choose from EfficientNetV2, ResNet, ViT and more. State-of-the-art PyTorch backbones pre-trained on ImageNet.',
   },
@@ -34,7 +34,7 @@ const features = [
   },
   {
     icon: '🚀',
-    color: 'rgba(74,222,128,0.1)',
+    color: 'rgba(6,182,212,0.1)',
     title: 'FastAPI Backend',
     desc: 'Production-ready REST API with async endpoints, Pydantic validation, and full Swagger / ReDoc docs.',
   },
@@ -93,7 +93,7 @@ export function HomePage() {
               >
                 <span style={{
                   fontFamily: 'var(--font-mono)', fontSize: '2rem', fontWeight: 800,
-                  color: 'var(--green-700)', lineHeight: 1,
+                  color: 'var(--info)', lineHeight: 1,
                 }}>{step.num}</span>
                 <h3 style={{ fontSize: '1rem', fontWeight: 700 }}>{step.title}</h3>
                 <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
@@ -138,8 +138,8 @@ export function HomePage() {
         <div className="container">
           <div className="glass-card" style={{
             padding: '48px', textAlign: 'center',
-            background: 'linear-gradient(135deg, rgba(74,222,128,0.06), rgba(15,26,20,0.8))',
-            borderColor: 'rgba(74,222,128,0.2)',
+            background: 'linear-gradient(135deg, rgba(6,182,212,0.06), rgba(15,23,42,0.8))',
+            borderColor: 'rgba(6,182,212,0.2)',
           }}>
             <ScanEye size={40} color="var(--accent)" style={{ marginBottom: 20 }} />
             <h2 style={{ marginBottom: 12 }}>Ready to diagnose your plants?</h2>

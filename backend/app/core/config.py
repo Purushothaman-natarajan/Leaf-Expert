@@ -21,6 +21,8 @@ class Settings(BaseSettings):
     data_dir: Path = Path("data")
     model_dir: Path = Path("models")
     log_dir: Path = Path("logs")
+    collected_data_dir: Path = Path("data/collected")
+    datastore_db_path: Path = Path("data/datastore.db")
 
     # Training defaults
     default_backbone: str = "efficientnet_v2_s"
@@ -28,6 +30,11 @@ class Settings(BaseSettings):
     default_batch_size: int = 32
     default_learning_rate: float = 1e-3
     default_patience: int = 7
+
+    # VLM / DataStore
+    vlm_default_provider: str = "gemini"
+    vlm_training_threshold: int = 30   # images per class to unlock training
+    ollama_host: str = "http://localhost:11434"
 
     # Device
     device: str = "auto"  # "auto" | "cpu" | "cuda"

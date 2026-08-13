@@ -27,6 +27,16 @@ seaborn>=0.13.2
 numpy>=1.26.0
 pillow>=10.4.0
 tqdm>=4.66.4
+httpx>=0.27.0
+
+# VLM providers (install only what you need)
+google-genai>=1.5.0       # Gemini 2.0 Flash
+openai>=1.40.0            # GPT-4o
+anthropic>=0.30.0         # Claude 3.5 Sonnet
+# ollama is accessed via httpx (already listed above) — no extra package needed
+
+# DataStore
+aiosqlite>=0.20.0
 
 # Dev / testing (install with: pip install -r requirements-dev.txt)
 # pytest, httpx, pytest-asyncio

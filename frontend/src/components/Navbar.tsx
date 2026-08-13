@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Leaf, FlaskConical, Cpu } from 'lucide-react';
+import { Leaf, FlaskConical, Cpu, Zap, Database } from 'lucide-react';
 import { getHealth, type HealthResponse } from '../api/client';
 
 export function Navbar() {
@@ -23,27 +23,27 @@ export function Navbar() {
         </NavLink>
 
         <div className="navbar__links">
-          <NavLink
-            to="/"
-            end
-            className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`}
-          >
+          <NavLink to="/" end className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`}>
             Home
           </NavLink>
-          <NavLink
-            to="/analyze"
-            className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`}
-          >
+          <NavLink to="/scan" className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`}>
             <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-              <FlaskConical size={14} /> Analyze
+              <Zap size={14} /> Quick Scan
             </span>
           </NavLink>
-          <NavLink
-            to="/train"
-            className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`}
-          >
+          <NavLink to="/analyze" className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <FlaskConical size={14} /> Local Model
+            </span>
+          </NavLink>
+          <NavLink to="/train" className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`}>
             <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
               <Cpu size={14} /> Train
+            </span>
+          </NavLink>
+          <NavLink to="/databank" className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <Database size={14} /> DataBank
             </span>
           </NavLink>
         </div>

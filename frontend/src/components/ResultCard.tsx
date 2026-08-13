@@ -39,7 +39,7 @@ export function ResultCard({ result }: ResultCardProps) {
   const maxProb = sorted[0]?.[1] ?? 1;
 
   const barColors = [
-    'linear-gradient(90deg, var(--green-400), var(--accent))',
+    'linear-gradient(90deg, var(--info), var(--accent))',
     'linear-gradient(90deg, var(--info), #93c5fd)',
     'linear-gradient(90deg, var(--warning), #fde68a)',
     'linear-gradient(90deg, var(--danger), #fca5a5)',
